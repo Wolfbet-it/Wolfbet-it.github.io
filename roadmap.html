@@ -8,13 +8,13 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
         rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/logo_footer.png" type="image/x-icon">
 
     <title>Roadmap | WolfBet </title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <!-- HEADER -->
     <header class="navbar roadmap">
         <div class="social-icons">
@@ -26,25 +26,28 @@
             </div>
         </div>
         <div class="social-icons">
-            <i class="bx bxl-instagram"></i>
+            <a href="https://instagram.com/wolfbet.it_off" target="_blank">
+                <i class="bx bxl-instagram"></i>
+            </a>
             <i class="bx bxl-tiktok"></i>
-            <i class="bx bxl-discord"></i>
             <i class="bx bxl-twitter"></i>
             <i class="bx bxl-youtube"></i>
         </div>
     </header>
 
-    <div class="container-img">
-        <p class="titleimg">Lorem Ipsum</p>
-        <p class="titleimg2">Lorem Ipsum</p>
-    </div>
+    <!-- FASCIA TESTO IMG -->
+    <section class="head-road">
+        <a class="button-road" href="#newsletter">Entra a far parte di
+            WolfBet!</a>
+        <img src="/img/img-roadmap.png" alt="">
+    </section>
 
     <div class="textroad" id="cose">
         <h1>Cos’è Wolfbet e perché é unico nel suo genere?</h1>
         <br>
         <p> Wolfbet è l’unico software in Italia, se non nel mondo, per
             scommettitori cazzuti in grado di analizzare completamente in modo
-            autonomo una partita di calcio define ndo tramite un apposito
+            autonomo una partita di calcio definendo tramite un apposito
             algoritmo creato ad hoc la strada per essere profittevole con le
             scommesse. </p>
         <br>
@@ -59,6 +62,13 @@
             brevi e dire stop una volta per tutte all’incertezza che domina il
             mondo del betting.</p>
     </div>
+
+    <a href="#newsletter" style="display: contents;">
+        <div class="btn-iscrivimi">
+            <span>Iscrivimi</span>
+            <i class="bx bx-right-arrow-alt"></i>
+        </div>
+    </a>
 
     <div class="container-roadmap" id="roadmap">
         <h3 class="main-t">RoadMap</h3>
@@ -80,8 +90,9 @@
             </div>
             <hr>
             <div class="content-fase">
-                <h3 class="hidden-t">Fase 2</h3><span>(data da definire)</span>
-                <p>Accesso alla piattaforma con numero limitato di posti</p>
+                <h3 class="hidden-t">Fase 2</h3><span><em>Coming
+                        soon</em></span>
+                <p>Accesso limitato alla piattaforma</p>
             </div>
         </div>
 
@@ -91,7 +102,8 @@
             </div>
             <hr>
             <div class="content-fase">
-                <h3 class="hidden-t">Fase 3</h3><span>(data da definire)</span>
+                <h3 class="hidden-t">Fase 3</h3><span><em>Coming
+                        soon</em></span>
                 <p>Accesso alla piattaforma per chi non ha l’account per poche
                     persone</p>
             </div>
@@ -115,33 +127,38 @@
                     <input type="hidden" name="meta_split_id" value="" />
                     <input type="hidden" name="listname"
                         value="awlist6369194" />
-                    <input type="hidden" name="redirect"
-                        value="https://www.aweber.com/thankyou-coi.htm?m=text"
-                        id="redirect_786b4b0336e9b81c51105124247e34be" />
-
+                    <input type="hidden" name="redirect" value=""
+                        id="redirect_ac4351539f8b91891f0b93bd91ee3f3b" />
+                    <input type="hidden" name="meta_redirect_onlist"
+                        value="https://wolfbet.it" />
                     <input type="hidden" name="meta_adtracking"
                         value="Wolfbet_Subscription" />
                     <input type="hidden" name="meta_message" value="1" />
                     <input type="hidden" name="meta_required"
                         value="name,email" />
-
+                    <input type="hidden" name="meta_forward_vars" value="1" />
                     <input type="hidden" name="meta_tooltip" value="" />
                 </div>
                 <input type="nome" id="nome" name="name"
                     placeholder="Cognome e Nome" value=""
                     onfocus=" if (this.value == '') { this.value = ''; }"
                     onblur="if (this.value == '') { this.value='';} " />
-                <input type="email" id="email" name="email"
-                    placeholder="Email" value="" 
+                <input type="email" id="email" name="email" placeholder="Email"
                     onfocus=" if (this.value == '') { this.value = ''; }"
                     onblur="if (this.value == '') { this.value='';} " />
+
+                <div class="input-privacy roadmap">
+                    <span>Cliccando "Registrati” accetterai i <a
+                            href="#">termini e condizioni</a></span>
+                    <!--pagina termini e condizioni-->
+                </div>
 
                 <p>Noi ci teniamo alla protezione dei tuoi dati. Leggi i nostri
                     <a href="#">Termini e Servizi</a>
                 </p>
 
                 <div class="btn-container">
-                    <button class="btn-invio" type="submit" name="submit">
+                    <button class="btn-invio" type="submit">
                         <span>Iscrivimi</span>
                         <i class="bx bx-right-arrow-alt"></i>
                     </button>
@@ -149,54 +166,6 @@
             </form>
         </div>
     </div>
-
-
-
-    <!-- /AWeber Web Form Generator 3.0.1 -->
-    <!-- FAQ -->
-    <!--<section class="container-faq">
-        <h3>Domande frequenti</h3>
-
-        <div class="faq">
-            <div class="question">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
-                <i class="bx bx-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-        </div>
-
-        <div class="faq">
-            <div class="question">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
-                <i class="bx bx-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-        </div>
-
-        <div class="faq">
-            <div class="question">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
-                <i class="bx bx-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-        </div>
-
-        <div class="faq">
-            <div class="question">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
-                <i class="bx bx-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-        </div>
-    </section> -->
 
     <div class="avvertenze">
         <span>18</span><br><br>
@@ -207,21 +176,21 @@
     </div>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <section class="footer colorato">
         <img src="img/logo_footer.png" alt="">
         <p>Visita i nostri social media!</p>
         <div class="social-icons">
             <i class="bx bxl-instagram"></i>
             <i class="bx bxl-tiktok"></i>
-            <i class="bx bxl-discord"></i>
             <i class="bx bxl-twitter"></i>
             <i class="bx bxl-youtube"></i>
         </div>
-        <p><a href="#">Email</a> | <a href="#">Legal</a></p>
+        <p><a href="mailto:info@wolfbet.it">info@wolfbet.it</a> | <a
+                href="#">Legal</a></p>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="/js/functions.js"></script>
 
 </body>
 
