@@ -2239,7 +2239,7 @@ p.moreinfo {
     }
 
     .img-roadmap {
-        content:url("img/logo.png");
+        content:url("/img/logo.png");
         transform: scale(1.5);
     }
 
