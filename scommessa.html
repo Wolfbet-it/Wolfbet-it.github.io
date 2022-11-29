@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo_temaChiaro.svg">
+
+    <title>Scommesse | WolfBet</title>
+</head>
+<body>
+    <sction id="blur">
+        <!-- HEADER -->
+        <header class="navbar double">
+            <a href="sceltaMatch.html"><i class="bx bx-chevron-left"></i></a>
+            <img src="img/logo_nero.png" alt="" id="logo-header">
+        </header>
+
+        <!-- CASH IN CONTAINER -->
+        <div class="cashin">
+            <h3>Budget <span class="insertIn">xx€</span></h3>
+            <p>|</p>
+            <h3>Cash in <span>xx€</span></h3>
+        </div>
+
+        <!-- SINGLE TEAM CONTAINER -->
+        <section class="team-scommessa">
+            <img src="img/team.png" alt="">
+            <div class="team-names">
+                <p>Team 1</p>
+                <p>Team 2</p>
+            </div>
+        </section>
+
+        <!-- SETTINGS CONTAINER -->
+        <div class="settings">
+            <p>data - ora</p>
+            <div class="icon">
+                <i class="bx bx-bell" id="icon" onclick="changeIconBell('icon')"></i>
+                <i class="bx bx-revision"></i>
+            </div>
+        </div>
+
+        <!-- PUNTATA CONTAINER -->
+        <section class="puntata-container">
+            <h3>Durata del match</h3>
+            <div class="time">
+                <i class="bx bx-timer"></i>
+                <span>- 2h 30min</span>
+            </div>
+
+            <div class="quote">
+                <p>Strategia</p>
+                <span class="p-place">Placeholder</span>
+                <p>Tipo puntata</p>
+                <span class="p-place">Placeholder</span>
+                <p>Quota</p>
+                <span class="p-place">Placeholder</span>  
+                <p>Cash 1</p>
+                <span class="p-place">Placeholder</span> 
+                <p>Cash 2</p>
+                <span class="p-place">Placeholder</span> 
+                <p>Cash 3</p>
+                <span class="p-place">Placeholder</span> 
+                <p>Cash 4</p>
+                <span class="p-place">Placeholder</span>  
+            </div>
+
+            <a href="#"><div class="btn-pay">
+                <span>Scommetti ora</span>
+                <i class="bx bx-money"></i>
+            </div></a>
+        </section>
+    </sction>
+
+    <!-- POP UP BUDGET -->
+    <section class="container-popBudg" id="popBudget">
+        <div class="title-popup">
+            <h3>Aggiungi al budget</h3>
+            <i class="bx bx-x-circle" id="close-pop"></i>
+        </div>
+
+        <div class="insertBudg">
+            <span>BUDGET</span>
+            <input type="text" placeholder="Numero">
+        </div>
+
+        <div class="btn-container">
+            <button class="btn-popBudg" type="submit">
+                <span>Aggiungi</span>
+                <i class="bx bx-plus-circle"></i>
+            </button>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/changeTheme.js"></script>
+</body>
+</html>

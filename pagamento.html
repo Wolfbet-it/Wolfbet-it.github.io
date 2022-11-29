@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo_temaChiaro.svg">
+
+    <title>Pagamento | WolfBet </title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar double">
+        <a href="sceltaPiano.html"><i class="bx bx-chevron-left"></i></a>
+        <img src="img/logo_nero.png" alt="" id="logo-header">
+    </header>
+
+    <h1 class="title">Pagamento</h1>
+
+    <p class="moreinfo">Pagamento piano Lorem Ipsum</p>
+
+    <!-- PIANO PAGAMENTO -->
+    <section>
+        <div class="box-pay pay">
+            <p>Lorem ipsum</p>
+            <div class="costo">
+                <span class="price">$ X</span>
+                <div class="info-costo">
+                    <span>USD / mo</span>
+                </div>
+            </div>
+            <a href="#"><div class="button">
+                <span>Compra Lorem Ipsum</span>
+            </div></a>
+            <ul>
+                <li>
+                    <i class="bx bx-check"></i>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </li>
+                <li>
+                    <i class="bx bx-check"></i>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </li>
+                <li>
+                    <i class="bx bx-check"></i>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PAGAMENTO -->    
+    <section class="container-pagamento">
+        <div class="metodo-pay">
+            <div class="metodo active">
+                <i class="bx bx-credit-card-front"></i>
+                <span>Carta di credito</span>
+            </div>
+
+            <div class="metodo">
+                <i class="bx bxl-google" id="icon-pay"></i>
+                <span>Pay</span>
+            </div>
+
+            <div class="metodo">
+                <i class="bx bxl-paypal"></i>
+                <span>PayPal</span>
+            </div>
+        </div>
+
+        <form action="" class="form">
+            <input type="number" id="numbercard" name="numbercard" class="numbercard" placeholder="Numero carta" required>
+            <input type="number" id="number" name="number" placeholder="MM / AA" class="number" required>
+            <input type="number" id="cvv" name="cvv" placeholder="CVV / CVC" class="cvv" required>
+            <input type="text" id="cardholder" name="cardholder" placeholder="intestatario" class="cardholder" required>
+        </form>
+
+        <a href="#"><div class="btn-pay">
+            <span>Paga $x</span>
+            <i class="bx bx-money"></i>
+        </div></a>
+    </section>
+
+    <div style="text-align: center; color:var(--text-color)">
+        Ti servono <a href="utilizzo.html" class="moreinfo">maggiori informazioni</a>?
+    </div>
+
+    <div class="empty-space"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/changeTheme.js"></script>
+    <script type="text/javascript" src="js/pagamento.js"></script>
+</body>
+</html>
