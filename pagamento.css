@@ -1,0 +1,170 @@
+@import "styles.css";
+
+.container-pagamento {
+    background: var(--primary-color);
+    width: 90%;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 0 0 20px;
+}
+
+.container-pagamento a {
+    display: contents;
+}
+
+.container-pagamento a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container-pagamento .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+} 
+
+.container-pagamento .form input {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.box-pay {
+    background: var(--primary-color);
+    width: 90%;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.box-pay .button:hover {
+    background: var(--text-color);
+}
+
+.box-pay a {
+    text-decoration: none;
+}
+
+.box-pay ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.box-pay ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.box-pay ul li:not(:last-child) {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.costo {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.costo .price {
+    font-size: var(--h1-font);
+    font-weight: 600;
+}
+
+.info-costo {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-costo {
+    font-size: 0.8rem;
+}
+
+.metodo-pay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+}
+
+.metodo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 15px;
+    color: var(--text-color);
+    background: var(--background);
+    border-bottom: 0;
+}
+
+.metodo.active {
+    background: var(--primary-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 10px;
+}
+
+.metodo span {
+    font-size: 1rem;
+}
+
+#numbercard,
+#cardholder {
+    grid-column: span 2;
+}
+
+.btn-pay {
+    background: var(--text-color);
+    width: 60%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px auto 10px;
+    gap: 10px;
+}
+
+.btn-pay span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.btn-pay img {
+    filter: var(--svg-primmary);
+}
+
+.btn-pay:hover {
+    background: var(--light-color);
+}
+
+
+@media (min-width: 1024px) {
+    .container-pagamento {
+        width: 40%;
+    }
+    .box-pay.pay {
+        width: 40%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .container-pagamento {
+        width: 60%;
+    }
+    .box-pay.pay {
+        width: 60%;
+    }
+}
+
+@media (min-width: 769px) {
+    .box-pay .button {
+        width: 100%;
+    }
+}

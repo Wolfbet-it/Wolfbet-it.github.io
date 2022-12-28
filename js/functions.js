@@ -9,7 +9,7 @@ faqs.forEach((faq) => {
 
 /* MENU A DISCESA UTENTE */
 $(document).ready(function(){ 
-    $(".user img").click(function(){
+    $(".user").click(function(){
         $(".shortcut").toggleClass("visible");
         $(".user-key").toggleClass("changeback");
     });
@@ -17,17 +17,28 @@ $(document).ready(function(){
 
 /* MENU PROFILO ANIMAZIONE */
 $(document).ready(function(){ 
-    $(".bxs-grid").click(function(){
+    $("#open-menu").click(function(){
         $("#mUser").removeClass("fadeout");
         $("#mUser").addClass("fadein");
         disableScroll();
     });
 });
 
+/* SEARCHBAR */
+
+$(window).click(function() {
+    $("#cerca").removeClass("searchbar-border");
+});
+
+$('#cerca').click(function(event){
+    event.stopPropagation();
+    $("#cerca").addClass("searchbar-border");
+});
+
 var temaCorrente = localStorage.getItem('theme');
 
 $(document).ready(function(){ 
-    $(".bx-x-circle").click(function(){
+    $("#close-menu").click(function(){
         $("#mUser").removeClass("fadein");
         $("#mUser").addClass("fadeout");
         $(".shortcut").removeClass("visible");
@@ -38,6 +49,12 @@ $(document).ready(function(){
             temaCorrente = localStorage.getItem('theme');
             location.reload();
         }
+    });
+});
+
+$(document).ready(function(){ 
+    $(".cm").click(function(){
+        $(this).toggleClass("selected");
     });
 });
 
@@ -82,7 +99,7 @@ $(document).ready(function(){
 
 /* POP UP DISISCRIVITI */
 $(document).ready(function(){ 
-    $(".button").click(function(){
+    $("#disiscriviti").click(function(){
         $("#popupdis").addClass("show");
         $("#blur").addClass("blur");
         disableScroll();
@@ -115,11 +132,18 @@ $(document).ready(function(){
 });
 
 /* MOSTRARE E NASCONDERE SALDO */
-function changeIcon(anchor) {
-    var icon = anchor.querySelector("#faPlus");
-    icon.classList.toggle("bx-show");
-    icon.classList.toggle("bx-hide");
-    anchor.querySelector("#valoreSaldo").textContent = icon.matches('.bx-show') ? "****" : anchor.querySelector("#valoreSaldo").dataset.text;
+function changeIcon() {
+    var eye = $("#hide");
+    eye.toggleClass("occhio");
+
+    var textBudget = document.getElementById("valoreSaldo");
+    var datasetBudget = textBudget.dataset.text;
+
+    if(eye.hasClass("occhio")) {
+        textBudget.textContent = "****";
+    } else {
+        textBudget.textContent = datasetBudget;
+    }
 }
 
 /* VISUALIZZA BARRA "MODIFICA - RIMUOVI" PAGINA HISTORY */
@@ -187,10 +211,8 @@ function enableScroll() {
 }
 
 /* CHANGE ICON BELL */
-function changeIconBell (iconID){
-    if(document.getElementById(iconID).className=="bx bx-bell"){
-        document.getElementById(iconID).className = "bx bxs-bell-ring";
-    }else{
-        document.getElementById(iconID).className = "bx bx-bell";
-    }
-}
+$(document).ready(function(){ 
+    $(".bellMatch").click(function(){
+        $(this).toggleClass("bell");
+    });
+});

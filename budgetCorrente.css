@@ -1,0 +1,131 @@
+@import "styles.css";
+
+.insertBudg {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    gap: 20px;
+    justify-items: center;
+}
+
+.insertBudg span {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.insertBudg input {
+    border-radius: 15px;
+    background: var(--background);
+    border: none;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 200;
+}
+
+.insertBudg input::placeholder {
+    color: var(--text-color);
+    opacity: .7;
+}
+
+.btn-popBudg {
+    background: var(--text-color);
+    color: var(--font-family);
+    width: 200px;
+    padding: 15px 10%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.btn-popBudg span {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.btn-popBudg img {
+    font-weight: 300;
+    filter: var(--svg-primmary);
+}
+
+.titleBudget {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.container-saldo {
+    display: grid;
+    grid-template-columns: 50% 10%;
+    margin: 20px auto 40px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.container-saldo h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: var(--h1-font);
+}
+
+.occhio {
+    content: url("icon/eye_opened.svg");
+}
+
+.container-budget {
+    width: 95%;
+    border-radius: 15px;
+    margin: 0 auto 30px;
+    background: var(--primary-color);
+    padding: 20px; 
+}
+
+.container-budget p {
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+.container-budget .button-dis {
+    width: 100%;
+}
+
+.container-budget .btn-container {
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .insertBudg {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0px 22%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-saldo {
+        grid-template-columns: 30% 5%;
+        width: 55%;
+    }
+    .container-budget {
+        width: 40%;
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .container-saldo {
+        grid-template-columns: 25% 5%;
+    }
+    .container-budget {
+        width: 60%;
+    } 
+}

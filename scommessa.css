@@ -1,0 +1,323 @@
+@import "styles.css";
+
+.btn-pay {
+    background: var(--text-color);
+    width: 60%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px auto 10px;
+    gap: 10px;
+}
+
+.btn-pay span {
+    font-weight: bold;
+}
+
+.btn-pay:hover {
+    background: var(--light-color);
+}
+
+.cashin {
+    display: grid;
+    grid-template-columns: 40% 10% 40%;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.cashin h3 {
+    font-size: var(--h3-font);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.cashin span {
+    font-weight: bold;
+    color: var(--light-color);
+}
+
+.cashin .insertIn {
+    padding: 3px 10px 7px;
+    background: var(--third-color);
+    border-radius: 15px;
+}
+
+.cashin .insertIn:hover {
+    cursor: pointer;
+}
+
+.cashin p {
+    font-weight: bold;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.team-scommessa {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    gap: 20px;
+    background: var(--primary-color);
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 30px auto;
+}
+
+.team-names {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    width: 90%;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.settings p {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.puntata-container {
+    background: var(--primary-color);
+    width: 90%;
+    padding: 20px 10px;
+    border-radius: 30px;
+    margin: 30px auto;
+}
+
+.puntata-container h3 {
+    color: var(--text-color);
+    font-size: var(--h3-font);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.puntata-container .button-dis {   
+    color: var(--background);
+}
+
+.puntata-container a {
+    text-decoration: none;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.time span {
+    color: var(--text-color) !important;
+}
+
+.quote {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 30px 20px;
+    row-gap: 25px;
+    align-items: center;
+}
+
+.quote p {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.quote input {
+    background: var(--background);
+    border-radius: 15px;
+    border: none;
+    padding: 12px 15px;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.quote input::placeholder {
+    color: var(--text-color);
+    opacity: .7;
+    font-weight: 300;
+}
+
+.quote input:hover {
+    background: var(--third-color);
+    cursor: pointer;
+}
+
+.quote input:focus-visible {
+    outline: 1px solid var(--text-color);
+    border-radius: 15px;
+}
+
+.quote .p-place {
+    text-align: center;
+    padding: 8px 10px;
+    background: var(--background);
+    color: var(--text-color);
+    border-radius: 15px
+}
+
+.btn-pay span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* POPUP */
+
+.container-popBudg {
+    display: none;
+    width: 90%;
+    border-radius: 15px;
+    background: var(--third-color);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+.container-popBudg p {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: var(--h3-font);
+}
+
+.container-popBudg .title-popup {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-popBudg .title-popup img {
+    font-size: 1.5rem;
+}
+
+.container-popBudg .btn-container {
+    justify-content: center;
+}
+
+.insertBudg {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    gap: 20px;
+    justify-items: center;
+}
+
+.insertBudg span {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.insertBudg input {
+    border-radius: 15px;
+    background: var(--background);
+    border: none;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 200;
+}
+
+.insertBudg input::placeholder {
+    color: var(--text-color);
+    opacity: .7;
+}
+
+.btn-popBudg {
+    background: var(--text-color);
+    color: var(--font-family);
+    width: 200px;
+    padding: 15px 10%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.btn-popBudg span {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.btn-popBudg img {
+    font-weight: 300;
+}
+
+.title-popup h3 {
+    color: var(--text-color);
+}
+
+@media (min-width: 1024px) {
+    .cashin {
+        width: 50%;
+    }
+    .team-scommessa {
+        width: 40%;
+    }
+    .settings {
+        width: 40%;
+    }
+    .container-popBudg {
+        width: 40%;
+    } 
+    .puntata-container {
+        width: 40%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .cashin {
+        width: 60%;
+    }
+    .team-scommessa {
+        width: 60%;
+    }
+    .settings {
+        width: 60%;
+    }
+    .container-popBudg {
+        width: 60%;
+        padding: 40px 0;
+    }
+    .puntata-container {
+        width: 60%;
+    }
+    .title-popup {
+        padding: 0 20%;
+    }
+}
+
+@media (min-width: 769px) {
+    .insertBudg {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0px 22%;
+    }
+}
+

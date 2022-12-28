@@ -1,0 +1,170 @@
+@import "styles.css";
+
+.puntata-container {
+    background: var(--primary-color);
+    width: 90%;
+    padding: 20px 10px;
+    border-radius: 30px;
+    margin: 30px auto;
+}
+
+.puntata-container h3 {
+    color: var(--text-color);
+    font-size: var(--h3-font);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.puntata-container .button-dis {   
+    color: var(--background);
+}
+
+.puntata-container a {
+    text-decoration: none;
+}
+
+.bottom-pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bottom-pop .button {
+    width: auto;
+}
+
+.button-long {
+    width: 90%;
+    background: var(--light-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.button-long:hover {
+    background: var(--text-color);
+    cursor: pointer;
+}
+
+.quote {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 30px 20px;
+    row-gap: 25px;
+    align-items: center;
+}
+
+.quote p {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.quote .col2 {
+    text-align: right;
+    color: var(--text-color);
+}
+
+.quote .quote-span {
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.button-dis {
+    width: 90%;
+    background: var(--light-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.button-dis:hover {
+    cursor: pointer;
+}
+
+.form-dis {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.form-dis label {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-dis textarea {
+    width: 100%;
+    margin-top: 20px;
+    background: var(--background);
+    border-radius: 15px;
+    border: none;
+    resize: none;
+    padding: 15px;
+    font-family: var(--font-family);
+    height: 100px;
+    color: var(--text-color);
+}
+
+.container-popupdis {
+    display: none;
+    width: 95%;
+    border-radius: 15px;
+    margin: auto;
+    background: var(--third-color);
+    padding: 20px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-popupdis p {
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+.container-popupdis .button-dis {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .puntata-container {
+        width: 40%;
+    }
+    .container-popupdis {
+        width: 40%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .puntata-container {
+        width: 60%;
+    }
+    .container-popupdis {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .bottom-pop {
+        width: 90%;
+    }
+    .quote {
+        width: 70%;
+        margin: 30px auto;
+    }
+    .button-long {
+        width: 70%;
+    }
+    .button-dis {
+        width: 70%;
+    }
+}

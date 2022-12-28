@@ -1,0 +1,374 @@
+@import "styles.css";
+
+.titleBudget {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.container-saldo {
+    display: grid;
+    grid-template-columns: 50% 10%;
+    margin: 20px auto 40px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.container-saldo h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: var(--h1-font);
+}
+
+.occhio {
+    content: url("icon/eye_opened.svg");
+}
+
+.container-history {
+    background: var(--primary-color);
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.incassoText {
+    text-align: center;
+}
+
+.title-history {
+    display: flex;
+    width: 85%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-history p {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.title-history i {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.partitaHistory {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 15px 25px;
+    background: var(--third-color);
+}
+
+.partitaHistory:hover {
+    cursor: pointer;
+}
+
+#addBudget-icon:hover {
+    cursor: pointer;
+}
+
+.nameTeam p {
+    color: var(--text-color);
+}
+
+.nameTeam span {
+    color: var(--text-color) !important;
+    font-size: 12px;
+}
+
+.inPartita {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.inPartita .negativo,
+.inPartita .positivo{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.negativo img {
+    filter: invert(14%) sepia(85%) saturate(4127%) hue-rotate(356deg) brightness(100%) contrast(99%);
+    width: 20px;
+}
+
+.inPartita .negativo {
+    color: #DA0B0B;
+    font-weight: 200;
+}
+
+.positivo img {
+    filter: invert(41%) sepia(96%) saturate(685%) hue-rotate(82deg) brightness(96%) contrast(103%);
+    width: 20px;
+}
+
+.inPartita .positivo {
+    color: #09AA16;
+    font-weight: 200;
+}
+
+.optionsHystory.flex {
+    display: flex !important;
+}
+
+.optionsHystory {
+    display: none;
+    width: 90%;
+    margin: 15px auto 0;
+    justify-content: space-between;
+}
+
+.optionsHystory span {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* POP UP ADD MATCH */
+.container-popAdd {
+    display: none;
+    width: 90%;
+    border-radius: 15px;
+    background: var(--third-color);
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+.container-popAdd .title-popup {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-popAdd .title-popup img {
+    font-size: 1.5rem;
+}
+
+.container-popAdd h3 {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: var(--h3-font);  
+}
+
+.container-popAdd p {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.container-popAdd input {
+    background: var(--background);
+    border-radius: 15px;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    color: var(--text-color);
+    grid-column: 1/3;
+}
+
+.container-popAdd input::placeholder {
+    color: var(--text-color);
+    opacity: .7;
+    font-weight: 300;
+}
+
+.container-popAdd input:hover {
+    background: var(--third-color);
+    cursor: pointer;
+}
+
+.container-popAdd input:focus-visible {
+    outline: 1px solid var(--text-color);
+    border-radius: 15px;
+}
+
+.title-popup h3 {
+    color: var(--text-color);
+}
+
+.c-dettagli p {
+    margin-bottom: 10px;
+}
+
+/*.c-capitale {
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+}*/
+
+.c-capitale {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.c-capitale p {
+    margin: auto;
+    width: 100%;
+}
+
+.c-checkbox {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.checkFlex {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.check p {
+    width: min-content;
+}
+
+/* CHECKBOX */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DA0B0B;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: var(--background);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #09AA16;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #09AA16;    
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.btn-popAdd {
+    background: var(--text-color);
+    color: var(--font-family);
+    width: 150px;
+    margin: 10px 0;
+    padding: 15px 10%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.btn-popAdd span {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.btn-popAdd img {
+    filter: var(--svg-primmary);
+}
+
+@media (min-width: 1024px) {
+    .container-saldo {
+        grid-template-columns: 60% 10%;
+        width: 30%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .title-popup {
+        padding: 0 20%;
+    }
+    .container-saldo {
+        grid-template-columns: 60% 40%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .container-history {
+        width: 60%;
+    }
+    .container-popAdd input {
+        grid-column: auto;
+    }
+    .c-capitale {
+        grid-template-columns: 1fr 1fr;
+    }  
+    .container-popAdd {
+        width: 60%;
+    }
+    .title-history p {
+        font-size: var(--h3-font);
+    }
+    .partitaHistory {
+        width: 70%;
+    }
+    .check {
+        gap: 30px;
+        width: 100%;
+    }
+}

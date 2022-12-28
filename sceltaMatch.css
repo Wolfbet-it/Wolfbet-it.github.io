@@ -1,0 +1,494 @@
+@import "styles.css";
+
+.container-popup {
+    display: none;
+    width: 80%;
+    border-radius: 15px;
+    background: var(--primary-color);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%); 
+}
+
+.container-popup p {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.bottom-pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bottom-pop .button {
+    width: auto;
+}
+
+.searchbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: var(--primary-color);
+    margin: auto;
+    padding: 10px 20px;
+    gap: 10px;
+    border: 2px solid transparent;
+}
+
+.searchbar-border {
+    border: 2px solid var(--text-color);
+}
+
+.searchbar button {
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.searchbar button i {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.searchbar input {
+    border-radius: 15px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: var(--text-color);
+    flex: 1;
+    font-size: var(--h3-font);
+    font-weight: 200;
+}
+
+.searchbar input::placeholder {
+    color: var(--text-color);
+    opacity: .7;
+    font-size: var(--h3-font);
+}
+
+.searchbar input:focus-visible {
+    outline: 0px;
+}
+
+.filters {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filters span {
+    font-size: var(--h3-font);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.bell {
+    content: url("icon/notification_bell_active_filled.svg");
+}
+
+.match90 {
+    width: 90%;
+    background: lightgray;
+    margin: 20px auto;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 150px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.imgCampionato {
+    padding: 10px;
+    width: inherit;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.container-match-45 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 90%;
+    gap: 20px;
+    margin: 0 auto 20px;
+}
+
+.match45 {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.cm {
+    background: var(--background-box);
+    display: flex;
+}
+
+.cm:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background: #c9c9c9;
+}
+
+.match-p { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    text-align: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border: 1px solid var(--text-color);*/
+}
+
+.container-partite {
+    width: 90%;
+    background: var(--primary-color);
+    margin: 30px auto 0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.container-partite.last {
+    margin-bottom: 30px;
+}
+
+.filters-match {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filters-match span {
+    color: var(--text-color);
+}
+
+.filters-match span {
+    font-size: var(--h3-font);
+    font-weight: 600;
+}
+
+.match-list {
+    display: grid;
+    grid-template-columns: 20% 20% 30% 10%;
+    gap: 20px;
+    background: var(--primary-color);
+    width: 100%;
+    border-radius: 30px;
+    margin: 20px auto;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid transparent;
+}
+
+.match-list:hover {
+    background: var(--third-color);
+    cursor: pointer;
+}
+
+.match-list p {
+    padding: 5px 0;
+}
+
+.match-list p,
+.match-list span {
+    color: var(--text-color);
+}
+
+.match-list img {
+    width: 45px;
+}
+
+.match-list .bellMatch {
+    width: auto;
+}
+
+/* MENU UTENTE */
+.menu-user {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    transition: 1s;
+    z-index: 999;
+}
+
+.menu-user.fadein {
+    transform: translateX(100%);
+}
+
+.menu-user.fadeout {
+    transform: translateX(-100%);
+}
+
+#close-menu:hover,
+#open-menu:hover {
+    cursor: pointer;
+}
+
+.btn-theme {
+    background: transparent;
+    border: 0;
+    width: min-content;
+}
+
+.btn-theme:hover {
+    cursor: pointer;
+}
+
+.topbar {
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+    justify-items: center;
+    padding: 30px;
+}
+
+.topbar img {
+    display: block;
+    margin: auto;
+}
+
+.topbar p {
+    font-size: var(--h3-font);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    margin-bottom: 25px;
+}
+
+.content-box span {
+    color: var(--text-color);
+    font-size: var(--h3-font);
+}
+
+.menu-user hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid var(--text-color);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.user img {
+    width: 40px;
+}
+
+.user img:hover {
+    cursor: pointer;
+}
+
+.user p {
+    font-size:16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 20px;
+    justify-content: end;
+}
+
+.content {
+    padding: 20px 45px;
+}
+
+.content-box {
+    grid-template-columns: 15% 85%;
+}
+
+.shortcut .content-box {
+    grid-template-columns: 10% 90%;
+    gap: 5%;
+}
+
+.shortcut {
+    display: none;
+}
+
+.shortcut a {
+    display: contents;
+}
+
+.user-key {
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.user-key:hover {
+    background: var(--primary-color);
+}
+
+/* CLASSI CON JS */
+
+.visible {
+    display: grid !important; 
+    padding: 20px 28px;
+    grid-column: 1/3; 
+}
+
+.changeback {
+    background: var(--third-color) !important;
+}
+
+@media (min-width: 1024px) {
+    .topbar {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 7% 90% 5%;
+        padding: 30px;
+        margin: auto;
+        align-items: center;
+        justify-items: start;
+    }
+    .content-box {
+        grid-template-columns: 7% 95%;
+    }
+    .shortcut .content-box {
+        grid-template-columns: 7% 95%;
+        gap: 0;
+    }
+    .user-key {
+        width: 60%;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .topbar {
+        grid-template-columns: 10% 85% 5%;
+        width: 65%;
+        margin: auto;
+    }
+    .content-box {
+        grid-template-columns: 10% 90%;
+    }
+    .content {
+        width: 65%;
+        margin: auto;
+    } 
+    .user-key {
+        width: 60%;
+    }
+}
+
+@media (min-width: 769px) {
+    .container-popup {
+        width: 40%;
+        padding: 40px;
+    }
+    .container-popup p {
+       font-size: var(--h3-font);
+    }
+    .bottom-pop {
+        width: 90%;
+    }
+    .searchbar {
+        width: 100%;
+    }
+    .container-searchbar {
+        width: 50%;
+        margin: auto;
+    }
+    .filters {
+        width: 50%;
+    }
+    .match90 {
+        width: 50%;
+        height: 200px;
+        background-size: 50%;
+    }
+    .container-match-45 {
+        width: 50%;
+    }
+    .match45 {
+        height: 200px;
+    }
+    .seriea {
+        background-size: 45%;
+    }
+    .laliga {
+        background-position-y: 30%;
+    }
+    .champions {
+        background-size: 40%;
+    }
+    .match-p { 
+        height: 30%;
+    }
+    .container-partite {
+        width: 50%;
+    }
+    .match-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        background: var(--primary-color);
+        border-radius: 30px;
+        align-items: center;
+        justify-items: center;
+        border: 1px solid transparent;
+        padding: 10px;
+    }
+    .match-list img {
+        width: 60px;
+    }
+    .menu-user .user {
+        padding: 30px;
+    }
+    .menu-user hr {
+        width: 60%;
+    }
+    .user {
+        grid-template-columns: 7% 60% 15% 15%;
+    }
+    .content {
+        width: 60%;
+        margin: auto;
+        padding: 15px 30px;
+    }
+    .content {
+        grid-template-columns: 5% 95%;
+    }
+    .shortcut {
+        padding: 20px 40px 30px;
+    }
+}

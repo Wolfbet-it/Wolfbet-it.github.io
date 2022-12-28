@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scommessa.css">
     <link rel="icon" href="img/logo_temaChiaro.svg">
 
     <title>Scommesse | WolfBet</title>
@@ -14,10 +14,10 @@
 <body>
     <sction id="blur">
         <!-- HEADER -->
-        <header class="navbar double">
-            <a href="sceltaMatch.html"><i class="bx bx-chevron-left"></i></a>
-            <img src="img/logo_nero.png" alt="" id="logo-header">
-        </header>
+    <header class="navbar double">
+        <a href="sceltaMatch.html"><img src="icon/simple_arrow_left.svg" class="imgSvg"></a>
+        <img src="img/logo_temaScuro.svg" alt="" class="logo">
+    </header>
 
         <!-- CASH IN CONTAINER -->
         <div class="cashin">
@@ -39,8 +39,8 @@
         <div class="settings">
             <p>data - ora</p>
             <div class="icon">
-                <i class="bx bx-bell" id="icon" onclick="changeIconBell('icon')"></i>
-                <i class="bx bx-revision"></i>
+                <img src="icon/notification_bell_filled.svg" class="imgSvg" id="bell" onclick="changeIconBell()">
+                <img src="icon/refresh.svg" class="imgSvg">
             </div>
         </div>
 
@@ -48,7 +48,7 @@
         <section class="puntata-container">
             <h3>Durata del match</h3>
             <div class="time">
-                <i class="bx bx-timer"></i>
+                <img src="icon/time.svg" class="imgSvg">
                 <span>- 2h 30min</span>
             </div>
 
@@ -71,7 +71,7 @@
 
             <a href="#"><div class="btn-pay">
                 <span>Scommetti ora</span>
-                <i class="bx bx-money"></i>
+                <img src="icon/cash_alt.svg" class="imgSvg-inverso">
             </div></a>
         </section>
     </sction>
@@ -80,7 +80,7 @@
     <section class="container-popBudg" id="popBudget">
         <div class="title-popup">
             <h3>Aggiungi al budget</h3>
-            <i class="bx bx-x-circle" id="close-pop"></i>
+            <img src="icon/cross.svg" class="imgSvg" id="close-pop">
         </div>
 
         <div class="insertBudg">
@@ -91,7 +91,7 @@
         <div class="btn-container">
             <button class="btn-popBudg" type="submit">
                 <span>Aggiungi</span>
-                <i class="bx bx-plus-circle"></i>
+                <img src="icon/plus.svg" class="imgSvg-inverso">
             </button>
         </div>
     </section>

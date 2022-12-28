@@ -1,0 +1,40 @@
+@import "styles.css";
+
+.input-privacy {
+    width: 90%;
+    margin: 10px auto 30px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-privacy input#privacy {
+    border: 2px solid var(--text-color);
+    accent-color: var(--background);
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.input-privacy input:checked {
+	background-color: var(--text-color);
+}
+
+.input-privacy span {
+    color: var(--text-color);
+    font-size: var(--p-font);
+}
+
+.input-privacy span a {
+    font-weight: bold;
+    color: var(--bold-font-color);
+}
+
+@media (min-width: 769px) {
+    .input-privacy {
+        grid-template-columns: 5% 95%;
+    }
+}

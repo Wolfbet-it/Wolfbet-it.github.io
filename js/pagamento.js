@@ -149,14 +149,13 @@
     switch (os) {
         case 'Windows':
         case 'Android':
-            document.getElementById("icon-pay").className = "bx bxl-google";
+            document.getElementById("icon-pay").src = "icon/Instagram_logo.svg";
             break;
 
         case 'Mac OS':
         case 'Mac OS X':
         case 'iOS':
-            document.getElementById("icon-pay").className = "bx bxl-apple";
-
+            document.getElementById("icon-pay").src = "icon/Apple_logo.svg";
             break;
     } 
 

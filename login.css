@@ -1,0 +1,39 @@
+@import "styles.css";
+
+.forgot-p {
+    text-align: right;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.forgot-p a {
+    color: var(--bold-font-color);
+}
+
+.register-p {
+    color: var(--text-color);
+    text-align: center;
+    width: 90%;
+    margin: 40px auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.register-p span {
+    color: var(--bold-font-color);
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .forgot-p {
+        width: 40%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .forgot-p {
+        width: 60%;
+    }
+}

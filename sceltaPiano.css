@@ -1,0 +1,97 @@
+@import "styles.css";
+
+.box-pay {
+    background: var(--primary-color);
+    width: 90%;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.box-pay.due {
+    background: var(--third-color);
+}
+
+.box-pay.tre {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+.box-pay .button:hover {
+    background: var(--text-color);
+}
+
+.box-pay.tre .button {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.box-pay.tre .button:hover {
+    background: var(--third-color);
+    color: var(--text-color);
+}
+
+.box-pay a {
+    text-decoration: none;
+}
+
+.box-pay ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.box-pay ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.box-pay ul li:not(:last-child) {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.box-pay.tre ul li:not(:last-child) {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.costo {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.costo .price {
+    font-size: var(--h1-font);
+    font-weight: 600;
+}
+
+.info-costo {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-costo {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+    .box-pay.pay {
+        width: 40%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .box-pay.pay {
+        width: 60%;
+    }
+}
+
+@media (min-width: 769px) {
+    .box-pay .button {
+        width: 100%;
+    }
+}
