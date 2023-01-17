@@ -3,21 +3,21 @@
 .head-road {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
     row-gap: 20px;
-    padding: 0 8%;
+    padding: 30px 8% 0;
     background: var(--primary-color);
 }
 
 .head-road img {
-    height: 400px;
+    width: 100%;
 }
 
 .button-road {
     display: inline-block;
     text-align: center;
+    width: fit-content;
     background: transparent;
     color: var(--text-color);
     border: 2px solid var(--text-color);
@@ -60,14 +60,61 @@
     font-size: 1rem;
 }
 
+.btn-iscrivimi img {
+    font-weight: 300;
+    filter: var(--svg-primmary);
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn-invio {
+    background: var(--text-color);
+    color: var(--font-family);
+    width: 100px;
+    padding: 15px 20%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.btn-invio:hover {
+    background: var(--light-color);
+}
+
+.btn-invio span {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.btn-invio img {
+    font-weight: 300;
+    filter: var(--svg-primmary);
+}
+
 .input-privacy.roadmap {
     margin: 10px auto;
     width: 100%;
-    gap: 0;
+    display: flex;
+    gap: 10px;
 }
 
 .input-privacy.roadmap span {
     font-size: 14px;
+    color: var(--text-color);
+}
+
+.input-privacy.roadmap span a{
+    color: var(--text-color);
+    font-weight: bold;
 }
 
 .input-privacy.roadmap input#privacy {
@@ -186,7 +233,7 @@
 
 .content-fase span {
     color: var(--text-color);
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .content-fase p {
@@ -198,7 +245,6 @@
     display: grid;
     gap: 4%;
     width: 60%;
-    grid-template-columns: 15% 0 40%;
     margin: 20px auto;
     align-items: center;
     justify-content: center;
@@ -208,8 +254,10 @@
     margin: 50px 0;
 }
 
-.container-roadmap hr {
+.hr {
     height: 120px;
+    width: 2px;
+    background: var(--text-color);
 }
 
 .avvertenze {
@@ -222,4 +270,33 @@
 .avvertenze span {
     padding: 3px 6px;
     border: 2px solid var(--text-color);
+}
+
+@media (min-width: 769px) {
+    .fase {
+        grid-template-columns: 15% 0 40%;
+    }
+    .head-road {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-items {
+        display: flex !important;
+    }
+    .menu-items a{
+        width: auto;
+    }
+    .navbar.roadmap {
+        padding: 10px 80px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .textroad {
+        width: 80%;
+    }
+    .textroad h1 {
+        margin-bottom: 20px;
+    }
+    .btn-iscrivimi {
+        margin-top: 20px;
+    }
 }

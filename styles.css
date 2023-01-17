@@ -259,36 +259,6 @@ a {
     border-radius: 15px;
 }
 
-.btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.btn-invio {
-    background: var(--text-color);
-    color: var(--font-family);
-    width: 100px;
-    padding: 15px 20%;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border: none;
-    cursor: pointer;
-    gap: 10px;
-}
-
-.btn-invio:hover {
-    background: var(--light-color);
-}
-
-.btn-invio span {
-    font-weight: bold;
-    color: var(--primary-color);
-    font-size: 1rem;
-}
-
 .title {
     font-size: var(--h1-font);
     text-align: center;
@@ -345,12 +315,6 @@ p.moreinfo {
     .title-hidden {
         text-align: left;
     }
-    .container-roadmap {
-        width: 100%;
-    }
-    .container-roadmap hr {
-        height: 150px;
-    }
     .fase {
         gap: 20px;
         width: 80%;
@@ -359,9 +323,6 @@ p.moreinfo {
     .head-road {
         grid-template-columns: 1fr;
         padding: 40px 10px 0;
-    }
-    .head-road img {
-        height: 300px;
     }
     .button-road {
         font-size: var(--h3-font);
@@ -435,21 +396,6 @@ p.moreinfo {
     .container-form {
         width: 80%;
         margin: auto;
-    }
-    .img-roadmap {
-        content:url("img/logo.png");
-        transform: scale(1.5);
-    }
-    .menu-items {
-        display: flex !important;
-    }
-    .menu-items a {
-        width: fit-content;
-    }
-    .navbar.roadmap {
-        padding: 10px 80px;
-        width: 80%;
-        margin-bottom: 0;
     }
     .text-slide {
         font-size: var(--h1-font);
