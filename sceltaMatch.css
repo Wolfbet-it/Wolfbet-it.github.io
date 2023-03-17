@@ -204,7 +204,7 @@
 }
 
 .match-list:hover {
-    background: var(--third-color);
+    background: var(--second-color);
     cursor: pointer;
 }
 
@@ -365,7 +365,7 @@
 }
 
 .changeback {
-    background: var(--third-color) !important;
+    background: var(--primary-color) !important;
 }
 
 @media (min-width: 1024px) {

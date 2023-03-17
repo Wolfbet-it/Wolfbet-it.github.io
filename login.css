@@ -4,7 +4,7 @@
     text-align: right;
     width: 90%;
     margin: 20px auto;
-    font-size: 1rem;
+    font-size: var(--p-font);
     font-weight: 700;
 }
 
@@ -17,7 +17,7 @@
     text-align: center;
     width: 90%;
     margin: 40px auto;
-    font-size: 1rem;
+    font-size: var(--p-font);
     line-height: 1.5;
 }
 

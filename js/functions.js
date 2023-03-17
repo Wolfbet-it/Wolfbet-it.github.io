@@ -1,9 +1,35 @@
+/* MENU BLOG */
+$(document).ready(function(){ 
+    $("#hamburger-menu").click(function(){
+
+        var hamb = $("#hamburger-menu");
+        hamb.toggleClass("hamburger-close");
+
+        $(".hamburger-menu").toggleClass("menu-visible");
+
+        if(hamb.hasClass("hamburger-close")) {
+            disableScroll();
+        } else {
+            enableScroll();
+        }
+    });
+});
+
+/* FILTER COMMENTS */
+$(document).ready(function(){ 
+    $(".filter-comments span").click(function(){
+        $(".filter-comments span").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
 /* FAQ */
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
     faq.addEventListener("click", () => {
         faq.classList.toggle("active");
+        document.getElementById("faq-plus").toggle("faqMinus");
     })
 });
 
@@ -216,3 +242,23 @@ $(document).ready(function(){
         $(this).toggleClass("bell");
     });
 });
+
+/* FORM ISCRIVI BETA 
+$(document).ready(function(){ 
+    var checkboxYes = document.getElementById("check-yes");
+    var checkboxNo = document.getElementById("check-no");
+
+    checkboxYes.addEventListener('change', function() {
+        if (this.checked) {
+          $("#totscomm").addClass("show-input");
+          checkboxNo.checked = false;
+        }
+    });
+
+    checkboxNo.addEventListener('change', function() {
+        if (this.checked) {
+          $("#totscomm").removeClass("show-input");
+          checkboxYes.checked = false;
+        }
+    });
+});*/
